@@ -1,0 +1,17 @@
+<Page x:Class="Marathon.RunnerResourses.RunnerRaceResultsPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="RunnerRaceResultsPage" xmlns:xui="clr-namespace:Marathon.RunnerResourses">
+	<Grid>
+		<DataGrid x:Name="dataGridEvents" AutoGenerateColumns="False" IsReadOnly="True">
+			<DataGrid.Columns>
+				<DataGridTextColumn Binding="{Binding Path=Event.EventName}" Header="Марафон" Width="*"/>
+				<DataGridTextColumn Binding="{Binding Path=Event.EventType.EventTypeName}" Header="Дистанция" Width="*"/>
+				<DataGridTextColumn Binding="{Binding Path=RaceTime}" Header="Время" Width="*"/>
+				<DataGridTextColumn Header="Общее место" Binding="{Binding Path=Place}" Width="*"/>
+
+				<DataGridTextColumn Header="Место по категории" Width="*"/>
+			</DataGrid.Columns>
+		</DataGrid>
+	</Grid>
+</Page>

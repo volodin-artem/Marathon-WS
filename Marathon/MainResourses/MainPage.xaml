@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+	x:Class="Marathon.MainPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="MainPage">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition
+				Height="Auto"></RowDefinition>
+			<RowDefinition
+				Height="Auto"></RowDefinition>
+			<RowDefinition
+				Height="Auto"></RowDefinition>
+		</Grid.RowDefinitions>
+		<StackPanel
+			Background="Gray"
+			VerticalAlignment="Center">
+			<TextBlock
+				TextAlignment="Center"
+				FontSize="18pt"
+				FontFamily="Arial"
+				Margin="0,20,0,0"
+				Foreground="White">MARATHON SKILLS 2016</TextBlock>
+			<TextBlock
+				FontStyle="Italic"
+				TextAlignment="Center"
+				FontFamily="Arial"
+				Foreground="LightGray"
+				Margin="0,20,0,20">Москва, Россия <LineBreak></LineBreak> среда 21 октября 2016</TextBlock>
+		</StackPanel>
+		<StackPanel
+			Grid.Row="1">
+			<Button
+				Margin="0,20,0,10"
+				Height="60"
+				Width="325" x:Name="buttonWannaBeRunner" Click="ButtonWannaBeRunner_Click">Я хочу стать бегуном</Button>
+			<Button
+				Margin="0,10,0,10"
+				Height="60"
+				Width="325"
+				x:Name="buttonWannaBeSponsor"
+				Click="ButtonWannaBeSponsor_Click">Я хочу стать спонсором бегуна</Button>
+			<Button
+				Margin="0,10,0,20"
+				Height="60"
+				Width="325" x:Name="buttonWannaKnowMore" Click="ButtonWannaKnowMore_Click">Я хочу узнать больше о событии</Button>
+		</StackPanel>
+		<Button
+			Width="63"
+			Height="23"
+			Grid.Column="0"
+			Grid.Row="1"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Bottom"
+			Margin="0,0,5,5" x:Name="buttonLogin" Click="ButtonLogin_Click">Login</Button>
+	</Grid>
+</Page>
